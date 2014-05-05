@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="left_menu">
+        <div class="caption">
+        <img src="img/resource.jpg" alt="..." class="img-responsive img-circle">
+        <h3>Project Resources</h3>
+      </div>
+      <ul class="nav nav-stacked">
+          <li class="active"><a href="#">Documents <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li class="active"><a href="#">Bronchours <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li><a href="#">Web Materials <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li><a href="#">Standards Definition <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+      </ul>
+    </div>
+    <hr />
+    
+    <div class="left_menu">
+        <div class="caption">
+        <img src="img/activities.jpg" alt="..." class="img-responsive img-circle">
+        <h3>Project Activities </h3>
+      </div>
+      <ul class="nav nav-stacked">
+        <li class="active"><a href="#">Meetings <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li><a href="#">Training <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li><a href="#">Current Progress <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li><a href="#">Testing <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+      </ul>
+    </div>
+    <hr />
+    
+    <div class="left_menu">
+        <div class="caption">
+            <img src="img/statistics.jpg" alt="..." class="img-responsive img-circle">
+        <h3>Data & Statistics</h3>
+      </div>
+       <ul class="nav nav-stacked">
+        <li class="active"><a href="#">Trends <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li><a href="#">Maps <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li><a href="#">Chats And Figures <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li><a href="#">Basic Fact Sheet <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+      </ul> 
+    </div>
+    <hr />
+    
+    <div class="left_menu">
+      <div class="caption">
+        <img src="img/forum.jpg" alt="..." class="img-responsive img-circle">
+        <h3>Forums</h3>
+      </div>
+       <ul class="nav nav-stacked">
+        <li class="active"><a href="#">Community <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li><a href="#">FAQ<span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+        <li><a href="#">Messages <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+      </ul>
+    </div>
+    <hr />
+    
+</div>
+<script type="text/javascript" src="js/menus.js"></script>

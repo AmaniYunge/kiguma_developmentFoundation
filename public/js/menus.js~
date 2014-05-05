@@ -1,0 +1,22 @@
+$(document).ready(function(){
+    
+    $('.carousel').carousel({
+        interval: 2000
+    });
+    
+   //hidding the navigation
+   $(".left_menu ul.nav").hide();
+   
+   //adding hover effect
+   $(".left_menu").hover(function(){
+       $(this).find("ul.nav").show("slow");
+       $(this).find(".caption img").hide("slow");
+       $(this).find(".caption p").hide("slow");
+   },function(){
+       $(this).find("ul.nav").hide("slow");
+       $(this).find(".caption img").show("slow");
+       $(this).find(".caption p").show("slow");
+   });
+});
+
+
