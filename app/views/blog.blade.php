@@ -1,7 +1,18 @@
 @extends('master')
 
 @section('content')
+<?php
 
+if(isset($_GET['cat'])){
+    $post = Post::where('category',$_GET['cat'])->orderBy('created_at','desc')->paginate(5);
+
+}
+else
+{
+    $post = Post::orderBy('created_at','desc')->paginate(5);
+}
+
+?>
 <section class="title">
     <div class="container">
         <div class="row-fluid">
@@ -23,51 +34,33 @@
     <div class="row-fluid">
         <div class="span8">
             <div class="blog">
+                @if($post->count() != 0)
+                @foreach($post as $po)
                 <div class="blog-item well">
-                    <a href="#"><h2>Duis sed odio sit amet nibh vulputate cursus</h2></a>
+                    <a href="#"><h2>{{ $po->name }}</h2></a>
                     <div class="blog-meta clearfix">
                         <p class="pull-left">
-                            <i class="icon-user"></i> by <a href="#">John</a> | <i class="icon-folder-close"></i> Category <a href="#">Bootstrap</a> | <i class="icon-calendar"></i> Sept 16th, 2012
+                            <i class="icon-user"></i> by <a href="#">{{ User::find($po->user_id)->firstname }}</a> |
+                            <i class="icon-folder-close"></i> Category <a href="#">{{ Category::find($po->category)->name }}</a> |
+                            <i class="icon-calendar"></i> {{ date ('M S, Y',strtotime($po->created_at)) }}
                         </p>
-                        <p class="pull-right"><i class="icon-comment pull"></i> <a href="blog-item.html#comments">3 Comments</a></p>
-                    </div>
-                    <p><img src="images/sample/blog1.jpg" width="100%" alt="" /></p>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <a class="btn btn-link" href="#">Read More <i class="icon-angle-right"></i></a>
-                </div>
-                <!-- End Blog Item -->
 
-                <div class="blog-item well">
-                    <a href="#"><h2>Duis sed odio sit amet nibh vulputate cursus a sit</h2></a>
-                    <div class="blog-meta clearfix">
-                        <p class="pull-left">
-                            <i class="icon-user"></i> by <a href="#">John</a> | <i class="icon-folder-close"></i> Category <a href="#">Bootstrap</a> | <i class="icon-calendar"></i> Sept 16th, 2012
-                        </p>
-                        <p class="pull-right"><i class="icon-comment pull"></i> <a href="blog-item.html#comments">3 Comments</a></p>
                     </div>
-                    <p><img src="images/sample/blog1.jpg" width="100%" alt="" /></p>
-                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                    <a class="btn btn-link" href="#">Read More <i class="icon-angle-right"></i></a>
+                    <p>
+                        {{ HTML::image("uploads/rooms/{$po->img1}","",array("class"=>"img-responsive img-rounded","style"=>"width:100%;padding-bottom:15px")) }}
+                    </p>
+                    <p>{{ $po->discr }}</p>
                 </div>
                 <!-- End Blog Item -->
 
                 <div class="gap"></div>
 
-                <!-- Paginationa -->
-                <div class="pagination">
-                    <ul>
-                        <li><a href="#"><i class="icon-angle-left"></i></a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#"><i class="icon-angle-right"></i></a></li>
-                    </ul>
-                </div>
+                @endforeach
+                @else
+                <h3>No Blog Posts</h3>
+                @endif
 
-
+                {{$post->appends(Request::except('page'))->links() }}
             </div>
         </div>
         <aside class="span4">
@@ -78,67 +71,23 @@
             </div>
             <!-- /.search -->
 
-            <div class="widget ads">
-                <div class="row-fluid">
-                    <div class="span6">
-                        <a href="#"><img src="images/ads/ad1.png" alt=""></a>
-                    </div>
-
-                    <div class="span6">
-                        <a href="#"><img src="images/ads/ad2.png" alt=""></a>
-                    </div>
-                </div>
-                <p> </p>
-                <div class="row-fluid">
-                    <div class="span6">
-                        <a href="#"><img src="images/ads/ad3.png" alt=""></a>
-                    </div>
-
-                    <div class="span6">
-                        <a href="#"><img src="images/ads/ad4.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <!-- /.ads -->
 
             <div class="widget widget-popular">
-                <h3>Popular Posts</h3>
+                <h3>Recent Posts</h3>
                 <div class="widget-blog-items">
+                    @foreach(Post::orderBy('created_at','DESC')->limit(5)->get() as $post )
                     <div class="widget-blog-item media">
                         <div class="pull-left">
                             <div class="date">
-                                <span class="month">Jun</span>
-                                <span class="day">24</span>
+                                <span class="month">{{ date('M',strtotime($post->created_at)) }}</span>
+                                <span class="day">{{ date('d',strtotime($post->created_at)) }}</span>
                             </div>
                         </div>
                         <div class="media-body">
-                            <a href="#"><h5>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris</h5></a>
+                            <a href="#"><h5>{{ $post->name }}</h5></a>
                         </div>
                     </div>
-
-                    <div class="widget-blog-item media">
-                        <div class="pull-left">
-                            <div class="date">
-                                <span class="month">Jun</span>
-                                <span class="day">24</span>
-                            </div>
-                        </div>
-                        <div class="media-body">
-                            <a href="#"><h5>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris</h5></a>
-                        </div>
-                    </div>
-
-                    <div class="widget-blog-item media">
-                        <div class="pull-left">
-                            <div class="date">
-                                <span class="month">Jun</span>
-                                <span class="day">24</span>
-                            </div>
-                        </div>
-                        <div class="media-body">
-                            <a href="#"><h5>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris</h5></a>
-                        </div>
-                    </div>
+                    @endforeach
 
                 </div>
             </div>
@@ -148,42 +97,25 @@
                 <h3>Blog Categories</h3>
                 <div>
                     <div class="row-fluid">
-                        <div class="span6">
+                        <div class="span9">
+                            @if(Category::all()->count() != 0 )
                             <ul class="unstyled">
-                                <li><a href="#">Development</a></li>
-                                <li><a href="#">Jamii</a></li>
-                                <li><a href="#">Updates</a></li>
-                                <li><a href="#">Afya</a></li>
-                                <li><a href="#">News</a></li>
+                                @foreach(Category::all() as $cats)
+                                <li><a href="#">{{ $cats->name }}</a></li>
+                                @endforeach
                             </ul>
+                            @else
+                            <h3>No Categories Defined Yet</h3>
+                            @endif
                         </div>
 
-                        <div class="span6">
-                            <ul class="unstyled">
-                                <li><a href="#">Jamii</a></li>
-                                <li><a href="#">Afya</a></li>
-                                <li><a href="#">Environment</a></li>
-                                <li><a href="#">Building</a></li>
-                                <li><a href="#">Security</a></li>
-                            </ul>
-                        </div>
+
                     </div>
 
                 </div>
             </div>
             <!-- End Category Widget -->
 
-
-            <div class="widget">
-                <h3>Archive</h3>
-                <ul class="archive arrow">
-                    <li><a href="#">May 2013</a></li>
-                    <li><a href="#">April 2013</a></li>
-                    <li><a href="#">March 2013</a></li>
-                    <li><a href="#">February 2013</a></li>
-                </ul>
-            </div>
-            <!-- End Archive Widget -->
 
         </aside>
     </div>
