@@ -217,7 +217,7 @@
                     <div class="modal-body">
                         <img src="{{asset('images/portfolio/full/item1.jpg')}}" alt=" " width="100%" style="max-height:400px;box-shadow: 5px 5px 10px #888888">
                     </div>
-                </div>                 
+                </div>
             </li>
             <!--/Item 1--> 
 
@@ -228,13 +228,13 @@
                     <div class="overlay">
                     </div>
                     <div class="links">
-                        <a data-toggle="modal" href="#modal-1"><i class="icon-eye-open"></i></a>
+                        <a data-toggle="modal" href="#modal-2"><i class="icon-eye-open"></i></a>
                     </div>
                 </div>
                 <div class="desc">
                     <h5>hghagjakshkja</h5>
                 </div>
-                <div id="modal-1" class="modal hide fade">
+                <div id="modal-2" class="modal hide fade">
                     <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
                     <div class="modal-body">
                         <img src="{{asset('images/portfolio/full/item2.jpg')}}" alt=" " width="100%" style="max-height:400px; box-shadow: 5px 5px 10px #888888">
@@ -261,9 +261,9 @@
                     <div class="modal-body">
                         <img src="{{asset('images/portfolio/full/item3.jpg')}}" alt=" " width="100%" style="max-height:400px;box-shadow: 5px 5px 10px #888888">
                     </div>
-                </div>                 
+                </div>
             </li>
-            <!--/Item 3--> 
+            <!--/Item 3-->
 
             <!--Item 4-->
             <li>
@@ -283,13 +283,24 @@
                     <div class="modal-body">
                         <img src="{{asset('images/portfolio/full/item4.jpg')}}" alt=" " width="100%" style="max-height:400px;box-shadow: 5px 5px 10px #888888">
                     </div>
-                </div>                 
+                </div>
             </li>
             <!--/Item 4-->               
 
         </ul>
     </div>
-
+    <!-- Paginationa -->
+    <div class="pagination">
+        <ul>
+            <li><a href="#"><i class="icon-angle-left"></i></a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><i class="icon-angle-right"></i></a></li>
+        </ul>
+    </div>
 </section>
 
 <section id="clients" class="main">

@@ -66,7 +66,7 @@
         <div class="row-fluid">
 
             <!--Contact Form-->
-            <div class="span4">
+            <div class="span5">
                 <h4>ADDRESS</h4>
                 <ul class="unstyled address">
                     <h5>Head Quaters(Ushirika street/Nzega District)</h5>
@@ -94,13 +94,13 @@
             <!--End Contact Form-->
 
             <!--Important Links-->
-            <div id="tweets" class="span2">
+            <div id="tweets" class="span3">
                 <h4>OUR FOUNDATION</h4>
                 <div>
                     <ul class="arrow">
                         <li><a href="{{url('about-us')}}">About Us</a></li>
-                        <li><a href="#">Contacts</a></li>
-<!--                        <li><a href="{{url('terms')}}">Terms of Use</a></li>-->
+                        <li><a href="{{url('contact')}}">Contacts</a></li>
+                        <li><a href="{{url('terms')}}">Terms of Use</a></li>
                         <li><a href="{{url('policy')}}">Privacy Policy</a></li>
                         <li><a href="{{url('hiring')}}">We are hiring</a></li>
                         <li><a href="{{url('blog')}}">Blog</a></li>
@@ -109,8 +109,8 @@
             </div>
 
 
-            <div class="span6">
-                <h4>OUR GALLERY</h4>
+            <div class="span4">
+                <h4>CALENDER</h4>
                 <div class="row-fluid first">
                     <ul class="thumbnails">
                         <li class="span3">

@@ -36,7 +36,7 @@ Route::get('blog', function()
     return View::make('blog');
 });
 
-Route::get('contact-us', function()
+Route::get('contact', function()
 {
     return View::make('contact');
 });
@@ -69,6 +69,11 @@ Route::get('hiring', function()
 Route::get('donation', function()
 {
     return View::make('donation');
+});
+
+Route::get('faq', function()
+{
+    return View::make('faq');
 });
 
 /**
