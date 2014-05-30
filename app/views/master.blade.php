@@ -131,9 +131,9 @@
                 <!-- Responsive calendar - START -->
                 <div class="responsive-calendar">
                     <div class="controls">
-                        <a class="pull-left" data-go="prev"><div class="btn"><i class="icon-chevron-left"></i></div></a>
+                        <a class="pull-left" data-go="prev"><div class="btn"><i class="fa fa-chevron-left"></i></div></a>
                         <h4><span data-head-year></span> <span data-head-month></span></h4>
-                        <a class="pull-right" data-go="next"><div class="btn"><i class="icon-chevron-right"></i></div></a>
+                        <a class="pull-right" data-go="next"><div class="btn"><i class="fa fa-chevron-right"></i></div></a>
                     </div><hr/>
                     <div class="day-headers">
                         <div class="day header">Mon</div>
