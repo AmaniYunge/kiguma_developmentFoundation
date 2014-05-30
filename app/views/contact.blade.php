@@ -1,6 +1,22 @@
 @extends('master')
 
 @section('content')
+<section class="title">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span6">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="span6">
+                <ul class="breadcrumb pull-right">
+                    <li><a href="/">Home</a> <span class="divider">/</span></li>
+                    <li class="active">Contacts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / .title -->
 <section class="no-margin">
     <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31832.228154886256!2d33.190134149999984!3d-4.214690699999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19ca0739b194ffff%3A0x6da97f379ca92855!2sNzega!5e0!3m2!1sen!2s!4v1398716582191" width="600" height="450" frameborder="0" style="border:0"></iframe>
 </section>
@@ -36,8 +52,12 @@
 
         <div class="span4">
             <h4>Our Address</h4>
-            <i class="icon-home"></i><strong>Address:</strong> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nzega District, Tabora<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tanzania
+            <i class="icon-home"></i><strong>Address:</strong> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nzega District, Tabora
 
+
+            <p>
+                &nbsp;&nbsp; &nbsp; P.o.Box 80,Nkinga-Tabora.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tanzania
+            </p>
             <p>
                 <i class="icon-envelope"></i> &nbsp;pskdf@hotmail.com
             </p>

@@ -28,6 +28,23 @@ $(document).ready(function(){
         });
     });//endof deleting category
 
+     $(".deletechance").click(function(){
+        var id1 = $(this).parent().attr('id');
+        $(".deletechance").show("slow").parent().parent().find("span").remove();
+        var btn = $(this).parent().parent();
+        $(this).hide("slow").parent().append("<span><br>Are You Sure <br /> <a href='#s' id='yes'><i class='fa fa-check'></i> Yes</a> <a href='#s' id='no'> <i class='fa fa-times'></i> No</a></span>");
+        $("#no").click(function(){
+            $(this).parent().parent().find(".deletechance").show("slow");
+            $(this).parent().parent().find("span").remove();
+        });
+        $("#yes").click(function(){
+            $(this).parent().html("<br><i class='fa fa-spinner fa-spin'></i>deleting...");
+            $.post("../admin/deletechance/"+id1,function(data){
+              btn.hide("slow").next("hr").hide("slow");
+           });
+        });
+    });//endof deleting category
+
     $(".deleteport").click(function(){
         var id1 = $(this).parent().attr('id');
         $(".deleteport").show("slow").parent().parent().find("span").remove();

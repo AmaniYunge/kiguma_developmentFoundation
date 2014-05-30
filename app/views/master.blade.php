@@ -12,12 +12,14 @@
 
    {{HTML::style("css/bootstrap.min.css")}}
     {{HTML::style("css/bootstrap-responsive.min.css")}}
-    {{HTML::style("css/font-awesome.min.css")}}
+    {{HTML::style("font-awesome/css/font-awesome.min.css")}}
     {{HTML::style("css/main.css")}}
     {{HTML::style("css/sl-slide.css")}}
 
     {{HTML::script("js/vendor/modernizr-2.6.2-respond-1.1.0.min.js")}}
     {{HTML::script("js/vendor/jquery-1.9.1.min.js")}}
+    {{HTML::script("responsive-calendar/0.7/js/responsive-calendar.js")}}
+    {{HTML::style("responsive-calendar/0.7/css/responsive-calendar.css")}}
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
@@ -25,6 +27,11 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <style>
+        .title{
+            padding-top: 45px;
+        }
+    </style>
 </head>
 
 <body style="font-family: Segoe UI;font-size: 15px">
@@ -37,18 +44,28 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </a>
-            <a id="logo" class="pull-left" href="/"></a>
-            <div class="nav-collapse collapse pull-right">
-                <ul class="nav">
+
+            <div class="nav-collapse collapse ">
+                <ul class="nav pull-left">
+                <li>
+                    <a class="pull-left" href="{{url('/')}}">
+                        <img src="{{asset('images/resized.png')}}" alt="" style="height: 80px;width:90px;padding-bottom: 10px" class="img-responsive">
+                    </a>
+                </li>
+                </ul>
+                    <ul class="nav pull-right" style="padding-top: 50px">
                     <li><a href="{{url('/')}}">Home</a></li>
                     <li><a href="{{url('about-us')}}">About</a></li>
                     <li><a href="{{url('services')}}">Services</a></li>
+                    <li><a href="{{url('job')}}">Orportunities</a></li>
                     <li><a href="{{url('portfolio')}}">Portfolio</a></li>
                     <li><a href="{{url('blog')}}">Blog</a></li>
                     <li><a href="{{url('contact-us')}}">Contacts</a></li>
                     <li class="login">
-                        <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
+                        <a data-toggle="modal" href="#loginForm"><i class="fa fa-lock"></i></a>
                     </li>
                 </ul>
             </div><!--/.nav-collapse -->
@@ -102,7 +119,7 @@
                         <li><a href="{{url('contact')}}">Contacts</a></li>
                         <li><a href="{{url('terms')}}">Terms of Use</a></li>
                         <li><a href="{{url('policy')}}">Privacy Policy</a></li>
-                        <li><a href="{{url('hiring')}}">We are hiring</a></li>
+<!--                        <li><a href="{{url('hiring')}}">We are hiring</a></li>-->
                         <li><a href="{{url('blog')}}">Blog</a></li>
                     </ul>
                 </div>
@@ -110,40 +127,34 @@
 
 
             <div class="span4">
-                <h4>CALENDER</h4>
-                <div class="row-fluid first">
-                    <ul class="thumbnails">
-                        <li class="span3">
-                            <img class="img-rounded img- thumbnail "  alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" width="75" height="75" alt="01 (6)">
-                        </li>
-                        <li class="span3">
-                           <img class="img-rounded img- thumbnail "  alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" width="75" height="75" alt="01 (6)">
-                        </li>
-                        <li class="span3">
-                            <img class="img-rounded img- thumbnail "  alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" width="75" height="75" alt="01 (6)">
-                        </li>
-                        <li class="span3">
-                            <img class="img-rounded img- thumbnail "  alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" width="75" height="75" alt="01 (6)">
-                        </li>
-                    </ul>
+                <h4 style="text-align: center">CALENDER</h4>
+                <!-- Responsive calendar - START -->
+                <div class="responsive-calendar">
+                    <div class="controls">
+                        <a class="pull-left" data-go="prev"><div class="btn"><i class="icon-chevron-left"></i></div></a>
+                        <h4><span data-head-year></span> <span data-head-month></span></h4>
+                        <a class="pull-right" data-go="next"><div class="btn"><i class="icon-chevron-right"></i></div></a>
+                    </div><hr/>
+                    <div class="day-headers">
+                        <div class="day header">Mon</div>
+                        <div class="day header">Tue</div>
+                        <div class="day header">Wed</div>
+                        <div class="day header">Thu</div>
+                        <div class="day header">Fri</div>
+                        <div class="day header">Sat</div>
+                        <div class="day header">Sun</div>
+                    </div>
+                    <div class="days" data-group="days">
+                        <!-- the place where days will be generated -->
+                    </div>
                 </div>
-                <br>
-                <div class="row-fluid">
-                    <ul class="thumbnails">
-                        <li class="span3">
-                           <img class="img-rounded img- thumbnail "  alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" width="75" height="75" alt="01 (6)">
-                        </li>
-                        <li class="span3">
-                           <img class="img-rounded img- thumbnail "  alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" width="75" height="75" alt="01 (6)">
-                        </li>
-                        <li class="span3">
-                            <img class="img-rounded img- thumbnail "  alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" width="75" height="75" alt="01 (6)">
-                        </li>
-                        <li class="span3">
-                           <img class="img-rounded img- thumbnail "  alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" width="75" height="75" alt="01 (6)">
-                        </li>
-                    </ul>
-                </div>
+
+                <script>
+                    $( document ).ready( function() {
+                        $('.responsive-calendar').responsiveCalendar();
+                    });
+                </script>
+                <!-- Responsive calendar - END -->
 
             </div>
 
@@ -173,7 +184,7 @@
             </div>
 
             <div class="span1">
-                <a id="gototop" class="gototop pull-right" href="#"><i class="icon-angle-up"></i></a>
+                <a id="gototop" class="gototop pull-right" href="#"><i class="fa fa-angle-up"></i></a>
             </div>
             <!--/Goto Top-->
         </div>
@@ -209,6 +220,8 @@
 <!-- Required javascript files for Slider -->
 {{HTML::script("js/jquery.ba-cond.min.js")}}
 {{HTML::script("js/jquery.slitslider.js")}}
+{{HTML::script("js/jquery.easing-1.3.min.js")}}
+{{HTML::script("js/jquery.scrollTo-1.4.3.1-min.js")}}
 <!-- /Required javascript files for Slider -->
 
 <!-- SL Slider -->

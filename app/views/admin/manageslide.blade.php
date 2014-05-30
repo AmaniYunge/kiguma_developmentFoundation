@@ -11,6 +11,12 @@
         <th>
 
         </th>
+        <th>
+            Title
+        </th>
+        <th>
+            Descriptions
+        </th>
 
         <th>
             Action
@@ -22,7 +28,8 @@
     <tr>
         <td>{{ $count++ }}</td>
         <td>{{ HTML::image("uploads/slideshow/{$us->picture}","",array("style"=>"width:100px;height:100px")) }}</td>
-
+        <td>{{ $us->title }} </td>
+        <td>{{ $us->discr }} </td>
         <td id='{{ $us->id }}' >
             <br><a href="#b" title="delete post" class="deleteslide"><i class="fa fa-trash-o text-danger"></i> delete</a>
         </td>

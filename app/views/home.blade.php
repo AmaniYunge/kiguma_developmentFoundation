@@ -75,11 +75,11 @@
             <div class="span3">
                 <div class="left_menu">
                     <div class="caption">
-                        <img src="{{asset('images/logo1.png')}}" alt="" style="box-shadow: 5px 5px 10px #888888" class="img-responsive">
+                        <img src="{{asset('images/kiguma2.jpg')}}" alt="" style="box-shadow: 5px 5px 10px #888888;height: 250px;width: 250px" class="img-responsive">
                         <h3>More Info</h3>
                     </div>
                     <ul class="nav nav-stacked">
-                        <li class="active"><a href="{{url('career')}}">Career <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+<!--                        <li class="active"><a href="{{url('career')}}">Career <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>-->
                         <li class="active"><a href="{{url('faq')}}">FAQ <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
                         <li class="divider"></li>
                         <li><a href="{{url('reg')}}">Registration <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
@@ -94,7 +94,7 @@
                     We work closely with communities to identify and develop projects that promote ownership,<br> are relevant and sustainable.</h4></p>
             </div>
             <div class="span3">
-                <img class="pull-right" src="{{asset('images/logo1.png')}}" alt="" style="box-shadow: 5px 5px 10px #888888">
+                <img class="pull-right" src="{{asset('images/kiguma2.jpg')}}" alt="" style="box-shadow: 5px 5px 10px #888888;height: 250px;width: 250px">
             </div>
         </div>
     </div>
@@ -104,7 +104,7 @@
 <section id="services">
     <div class="container">
         <div class="center gap">
-            <h3>What We Offer</h3>
+            <h3>Services</h3>
             <p class="lead">Our work uses an integrated approach to deliver holistic development to communities in the following areas:</p>
         </div>
 
@@ -112,7 +112,7 @@
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="icon-globe icon-medium"></i>
+                        <i class="fa fa-globe fa-3x text-success"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Basic Services</h4>
@@ -125,7 +125,7 @@
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="icon-thumbs-up-alt icon-medium"></i>
+                        <i class="fa fa-thumbs-up fa-3x text-success"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Food &amp; Income Security</h4>
@@ -137,7 +137,7 @@
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="icon-leaf icon-medium icon-rounded"></i>
+                        <i class=" fa fa-leaf fa-3x text-success"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Environmental Management &amp; Protection</h4>
@@ -153,7 +153,7 @@
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="icon-shopping-cart icon-medium"></i>
+                        <i class=" fa fa-shopping-cart fa-3x text-success"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Peace Building Initiatives</h4>
@@ -165,7 +165,7 @@
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="icon-globe icon-medium"></i>
+                        <i class="fa fa-globe fa-3x text-success"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Governance  &amp; Civil Society Strengthening </h4>
@@ -177,7 +177,7 @@
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="icon-globe icon-medium"></i>
+                        <i class="fa fa-globe fa-3x text-success"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Community Health</h4>
@@ -198,109 +198,35 @@
             <p class="lead">Look at some of the recent projects we have completed for the community.</p>
         </div>
         <div class="gap"></div>
-        <ul class="gallery col-4">
-            <!--Item 1-->
-            <li>
-                <div class="preview">
-                    <img class="img-rounded" alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" style="box-shadow: 5px 5px 10px #888888">
-                    <div class="overlay">
-                    </div>
-                    <div class="links">
-                        <a data-toggle="modal" href="#modal-1"><i class="icon-eye-open"></i></a>
-                    </div>
-                </div>
-                <div class="desc">
-                    <h5>hgGJSKHBKclnsk</h5>
-                </div>
-                <div id="modal-1" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img src="{{asset('images/portfolio/full/item1.jpg')}}" alt=" " width="100%" style="max-height:400px;box-shadow: 5px 5px 10px #888888">
-                    </div>
-                </div>
-            </li>
-            <!--/Item 1--> 
+        <div id="myCarousel" class="carousel slide">
 
-            <!--Item 2-->
-            <li>
-                <div class="preview">
-                    <img class="img-rounded" alt=" " src="{{asset('images/portfolio/thumb/item2.jpg')}}" style="box-shadow: 5px 5px 10px #888888">
-                    <div class="overlay">
-                    </div>
-                    <div class="links">
-                        <a data-toggle="modal" href="#modal-2"><i class="icon-eye-open"></i></a>
-                    </div>
+            <div class="carousel-inner">
+                <?php
+                $i = 0;
+                $k = 0;
+                ?>
+                <div class="active item"><div class="row-fluid">
+                @foreach(Slideshow::all() as $slide)
+                    <?php $i++; $k++ ?>
+                        <div class="span4">
+                            <img src='{{asset("uploads/slideshow/{$slide->picture}")}}' style="height: 260px; width: 300px" >
+                        </div>
+                        <?php
+                        if($i == 3 && $k != Slideshow::all()->count()){
+                            echo "</div></div><div class='item'><div class='row-fluid'>";
+                            $i=0;
+                        }
+                        ?>
+                @endforeach
+                    </div></div>
                 </div>
-                <div class="desc">
-                    <h5>hghagjakshkja</h5>
-                </div>
-                <div id="modal-2" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img src="{{asset('images/portfolio/full/item2.jpg')}}" alt=" " width="100%" style="max-height:400px; box-shadow: 5px 5px 10px #888888">
-                    </div>
-                </div>                 
-            </li>
-            <!--/Item 2-->
 
-            <!--Item 3-->
-            <li>
-                <div class="preview">
-                    <img class="img-rounded" alt=" " src="{{asset('images/portfolio/thumb/item3.jpg')}}" style="box-shadow: 5px 5px 10px #888888">
-                    <div class="overlay">
-                    </div>
-                    <div class="links">
-                        <a data-toggle="modal" href="#modal-3"><i class="icon-eye-open"></i></a>
-                    </div>
-                </div>
-                <div class="desc">
-                    <h5>ggushcijsojkpos</h5>
-                </div>
-                <div id="modal-3" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img src="{{asset('images/portfolio/full/item3.jpg')}}" alt=" " width="100%" style="max-height:400px;box-shadow: 5px 5px 10px #888888">
-                    </div>
-                </div>
-            </li>
-            <!--/Item 3-->
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 
-            <!--Item 4-->
-            <li>
-                <div class="preview">
-                    <img class="img-rounded"  alt=" " src="{{asset('images/portfolio/thumb/item4.jpg')}}" style="box-shadow: 5px 5px 10px #888888">
-                    <div class="overlay">
-                    </div>
-                    <div class="links">
-                        <a data-toggle="modal" href="#modal-4"><i class="icon-eye-open"></i></a>
-                    </div>
-                </div>
-                <div class="desc">
-                    <h5>yhghciklskcj;S;</h5>
-                </div>
-                <div id="modal-4" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img src="{{asset('images/portfolio/full/item4.jpg')}}" alt=" " width="100%" style="max-height:400px;box-shadow: 5px 5px 10px #888888">
-                    </div>
-                </div>
-            </li>
-            <!--/Item 4-->               
-
-        </ul>
     </div>
-    <!-- Paginationa -->
-    <div class="pagination">
-        <ul>
-            <li><a href="#"><i class="icon-angle-left"></i></a></li>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#"><i class="icon-angle-right"></i></a></li>
-        </ul>
-    </div>
+
 </section>
 
 <section id="clients" class="main">
@@ -313,7 +239,9 @@
                         <a class="prev" href="#myCarousel" data-slide="prev"><i class="icon-angle-left icon-large"></i></a> <a class="next" href="#myCarousel" data-slide="next"><i class="icon-angle-right icon-large"></i></a>
                     </div>
                 </div>
-                <p>We work closely with communities to identify and develop projects that promote ownership</p>
+                <p>We grateful to our development partners over the years who have continued to
+                    believe and support our work of uplifting the lives of communities.
+                </p>
             </div>
             <div class="span9">
                 <div id="myCarousel" class="carousel slide clients">

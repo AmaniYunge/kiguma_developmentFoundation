@@ -36,7 +36,7 @@ Route::get('blog', function()
     return View::make('blog');
 });
 
-Route::get('contact', function()
+Route::get('contact-us', function()
 {
     return View::make('contact');
 });
@@ -76,6 +76,30 @@ Route::get('faq', function()
     return View::make('faq');
 });
 
+Route::get('internship', function()
+{
+    return View::make('internship');
+});
+
+Route::get('job', function()
+{
+    return View::make('job');
+});
+
+Route::get('volunteer', function()
+{
+    return View::make('volunteer');
+});
+
+Route::get('tenders', function()
+{
+    return View::make('tenders');
+});
+
+Route::get('consultancy', function()
+{
+    return View::make('consultancy');
+});
 /**
  * Administration Area
  * By kelvin mbwilo
@@ -265,3 +289,26 @@ Route::get('admin/logout',array("as"=>"logout",function(){
     Session::flush();
     return Redirect::route('homepage');
 }));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////manage opportunities///////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+Route::get('admin/addchance',array('as'=>'addchance',  function (){
+
+    return View::make('admin.addchance');
+}));
+
+
+Route::get('admin/managechance',array('as'=>'managechance',  function (){
+    $chances = Chances::all();
+    return View::make('admin.managechance',  compact("chances"));
+}));
+
+Route::post('admin/addchance',array('as'=>'addchance1',  "uses"=>"PostController@addchance"));
+
+
+Route::post('admin/deletechance/{id}',  function ($id){
+    $cat = Chances::find($id);
+    unlink(public_path().'/uploads/resources/'.$cat->file);
+    $cat->delete();
+});

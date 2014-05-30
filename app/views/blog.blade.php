@@ -15,7 +15,7 @@ else
 ?>
 <section class="title">
     <div class="container">
-        <div class="row-fluid">
+        <div class="row-fluid" >
             <div class="span6">
                 <h1>Blog</h1>
             </div>

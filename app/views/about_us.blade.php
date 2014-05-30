@@ -28,7 +28,14 @@
                 and standard of living. Currently it operate different programmes, KDF has adequate years’ experience working with
                 marginalized communities.
             </p><p>Directed by its philosophy of participation and collaboration, KDF focuses on creating long-lasting development through
-                an integrated approach that supports communities to become self-reliant and regain control over their lives.</p>
+                an integrated approach that supports communities to become self-reliant and regain control over their lives.
+            </p><p>In addressing various community problems, KDF use participatory, equity, inclusion
+            and right based means to work with strategic stakeholders including vulnerable and
+            marginalized groups such as People with disabilities, women and children among
+            others to increase joint efforts, co-operation, project sustainability, effective change
+            making and as a means of creating a louder voice for change and mutual support in
+            addressing community problems</p>
+
         </div>
         <div class="span6">
             <h2>Our Skills</h2>
@@ -72,7 +79,7 @@
         <div class="span3">
             <div class="img-rounded">
                 <p> <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/mrs.jpg')}}" style="width: 160px; height: 200px"></p>
-                <h5>YUNGE, Winfrida</h5>
+                <h5>YUNGE, Subira Y</h5>
                 <p><strong>Adminstration Officer</strong><br>Bsc In Bussiness Adminstration</p>
                 <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
             </div>
