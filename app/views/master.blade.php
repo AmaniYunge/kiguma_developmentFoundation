@@ -58,7 +58,7 @@
                 </ul>
                     <ul class="nav pull-right" style="padding-top: 50px">
                     <li><a href="{{url('/')}}">Home</a></li>
-                    <li><a href="{{url('about-us')}}">Who We Are</a></li>
+                    <li><a href="{{url('about-us')}}">What We Are</a></li>
                     <li><a href="{{url('services')}}">What We Do</a></li>
                     <li><a href="{{url('job')}}">Orportunities</a></li>
                     <li><a href="{{url('portfolio')}}">Portfolio</a></li>
