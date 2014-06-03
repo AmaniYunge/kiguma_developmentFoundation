@@ -34,7 +34,8 @@
                 <h2 style="color: orangered"> There are no current interns openings </h2>
                 @else
                 @foreach(Chances::where('type','Internship')->get() as $chance )
-                <h2 style="color: orangered">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'> <i class="fa fa-download text-info pull-right"></i></a></h2>
+                <h2 style="color: orangered">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'>
+                        <i class="fa fa-download text-info pull-right"></i></a></h2>
                 <p class="lead" style="color:steelblue">{{ $chance->discr }}</p>
 
                 @endforeach

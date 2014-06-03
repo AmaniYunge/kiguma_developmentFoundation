@@ -69,7 +69,7 @@
 
         <div class="span3">
             <div class="img-rounded">
-                <p> <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" style="width: 160px; height: 200px"></p>
+                <p> <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/kifutumo.jpg')}}" style="width: 160px; height: 200px"></p>
                 <h5>KIFUTUMO, David J.</h5>
                 <p><strong>Director</strong><br>vvhvhgg</p>
                 <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>

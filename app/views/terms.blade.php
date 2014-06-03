@@ -31,14 +31,9 @@
                 an integrated approach that supports communities to become self-reliant and regain control over their lives.</p>
         </div>
         <div class="span6">
-            <h2>Our Skills</h2>
+            <h2></h2>
             <div>
-                <div class="progress"><div class="bar" style="width: 80%; text-align:left; padding-left:10px;">Basic Services</div></div>
-                <div class="progress progress-warning"><div class="bar" style="width: 70%; text-align:left; padding-left:10px;">Food & Income Security</div></div>
-                <div class="progress progress-warning"><div class="bar" style="width: 70%; text-align:left; padding-left:10px;">Community Health</div></div>
-                <div class="progress progress-info"><div class="bar" style="width: 60%; text-align:left; padding-left:10px;">Environmental Management & Protection</div></div>
-                <div class="progress progress-danger"><div class="bar" style="width: 90%; text-align:left; padding-left:10px;">Peace Building Initiatives</div></div>
-                <div class="progress progress-success"><div class="bar" style="width: 90%; text-align:left; padding-left:10px;">Governance & Civil Society Strengthening</div></div>
+                <img class="pull-right" src="{{asset('images/kiguma.png')}}" alt="" style="height: 350px;width: 350px">
             </div>
         </div>
     </div>

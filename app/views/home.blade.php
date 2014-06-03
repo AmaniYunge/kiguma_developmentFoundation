@@ -89,9 +89,15 @@
                 </div>
             </div>
             <div class="span6" style="text-align: center; color: #2dcc70">
-                <h2>WHAT WE DO</h2>
-                <p class="no-margin"><h4>
-                    We work closely with communities to identify and develop projects that promote ownership,<br> are relevant and sustainable.</h4></p>
+                <h2>WHERE WE WORK</h2>
+                <h4 class="lead"style="font-family: Segoe UI">
+                   <p>Currently we support and facilitate community health and development
+                       programmes in the remote area of Tanzania mainland as per our registration.
+                       </p><p>As a learning organization, KDF is keen on documenting its experiences as well
+                       as results and impact of its work with communities in its districts of operations
+                       and making them available to a diverse audience. .</p>
+
+                </h4>
             </div>
             <div class="span3">
                 <img class="pull-right" src="{{asset('images/kiguma2.jpg')}}" alt="" style="box-shadow: 5px 5px 10px #888888;height: 250px;width: 250px">
@@ -104,15 +110,19 @@
 <section id="services">
     <div class="container">
         <div class="center gap">
-            <h3>Services</h3>
-            <p class="lead">Our work uses an integrated approach to deliver holistic development to communities in the following areas:</p>
+            <h2 style="text-align: center; color: #2dcc70">WHAT WE DO</h2>
+            <p class="lead">We work closely with communities to identify and develop projects that promote
+                ownership, are relevant and sustainable.<br>
+                Our work uses an integrated approach to deliver holistic development to
+                communities in the following areas...
+            </p>
         </div>
 
         <div class="row-fluid">
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-globe fa-3x text-success"></i>
+                        <i class="fa fa-cogs fa-3x text-success"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Basic Services</h4>
@@ -125,7 +135,7 @@
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-thumbs-up fa-3x text-success"></i>
+                        <i class="fa fa-money fa-3x text-success"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Food &amp; Income Security</h4>
@@ -153,7 +163,7 @@
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
-                        <i class=" fa fa-shopping-cart fa-3x text-success"></i>
+                        <i class=" fa fa-lock fa-3x text-success"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Peace Building Initiatives</h4>
@@ -165,7 +175,7 @@
             <div class="span4">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-globe fa-3x text-success"></i>
+                        <i class="fa fa-legal fa-3x text-success"></i>
                     </div>
                     <div class="media-body">
                         <h4 class="media-heading">Governance  &amp; Civil Society Strengthening </h4>
@@ -209,7 +219,7 @@
                 @foreach(Slideshow::all() as $slide)
                     <?php $i++; $k++ ?>
                         <div class="span4">
-                            <img src='{{asset("uploads/slideshow/{$slide->picture}")}}' style="height: 260px; width: 300px" >
+                            <img src='{{asset("uploads/slideshow/{$slide->picture}")}}' style="box-shadow: 5px 5px 10px #888888;height: 100px">
                         </div>
                         <?php
                         if($i == 3 && $k != Slideshow::all()->count()){

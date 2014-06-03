@@ -58,8 +58,8 @@
                 </ul>
                     <ul class="nav pull-right" style="padding-top: 50px">
                     <li><a href="{{url('/')}}">Home</a></li>
-                    <li><a href="{{url('about-us')}}">About</a></li>
-                    <li><a href="{{url('services')}}">Services</a></li>
+                    <li><a href="{{url('about-us')}}">Who We Are</a></li>
+                    <li><a href="{{url('services')}}">What We Do</a></li>
                     <li><a href="{{url('job')}}">Orportunities</a></li>
                     <li><a href="{{url('portfolio')}}">Portfolio</a></li>
                     <li><a href="{{url('blog')}}">Blog</a></li>
@@ -115,7 +115,7 @@
                 <h4>OUR FOUNDATION</h4>
                 <div>
                     <ul class="arrow">
-                        <li><a href="{{url('about-us')}}">About Us</a></li>
+                        <li><a href="{{url('about-us')}}">Who We Are</a></li>
                         <li><a href="{{url('contact')}}">Contacts</a></li>
                         <li><a href="{{url('terms')}}">Terms of Use</a></li>
                         <li><a href="{{url('policy')}}">Privacy Policy</a></li>
