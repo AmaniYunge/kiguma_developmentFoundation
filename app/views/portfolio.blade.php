@@ -25,7 +25,7 @@
     @foreach(Portifolio::all() as $port)
     <li class="span4">
         <div class="preview">
-            <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src='{{asset("uploads/rooms/{$port->image}")}}' style="width: 85%; height: 200px">
+            <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src='{{asset("uploads/rooms/{$port->image}")}}' style="box-shadow: 5px 5px 10px #888888;width: 85%; height: 200px">
 
 
         </div>

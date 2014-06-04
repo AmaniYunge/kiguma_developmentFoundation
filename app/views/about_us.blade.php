@@ -52,59 +52,13 @@
 
     <hr>
 
-    <!-- Meet the team -->
-    <h1 class="center">Meet the Team</h1>
-
-    <hr>
-
-    <div class="row-fluid">
-        <div class="span3">
-            <div class="img-rounded">
-                <p> <img class="img-rounded img- thumbnail icon-align-center "  alt=" " src="{{asset('images/portfolio/thumb/kifutumo.jpg')}}" style="width: 160px; height: 200px"></p>
-                <h5> Dr. KIFUTUMO, Francis J</h5>
-                <p><strong>CEO</strong><br>Msc Health Management</p>
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>
-
-        <div class="span3">
-            <div class="img-rounded">
-                <p> <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/kifutumo.jpg')}}" style="width: 160px; height: 200px"></p>
-                <h5>KIFUTUMO, David J.</h5>
-                <p><strong>Director</strong><br>vvhvhgg</p>
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>
-
-        <div class="span3">
-            <div class="img-rounded">
-                <p> <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/mrs.jpg')}}" style="width: 160px; height: 200px"></p>
-                <h5>YUNGE, Subira Y</h5>
-                <p><strong>Adminstration Officer</strong><br>Bsc In Bussiness Adminstration</p>
-                <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>
-
-        <div class="span3">
-            <div class="img-rounded">
-                <p> <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/1.jpg')}}" style="width: 160px; height: 200px"></p>
-                <h5>YUNGE, Amani Y</h5>
-                <p><strong>Infomation Technology Technician</strong><br>Bsc In Computer Science</p>
-                <a class="btn btn-social btn-facebook" href="https://www.facebook.com/amani.yunge"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="https://plus.google.com/u/1/113512598133517047997/about"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
-    <p>&nbsp;</p>
-    <p></p>
-    <hr>
-
     <div class="row-fluid">
         <div class="span6">
             <h3>Vision</h3>
             <p>KDF’s vision is sustainable improved quality of life for disadvantaged communities in Tanzania.</p><br>
-                <strong>This vision is supported by four pillars:</strong>
-                <li>Community Participation,</li>
-               <li>Gender Equity</li>
+            <strong>This vision is supported by four pillars:</strong>
+            <li>Community Participation,</li>
+            <li>Gender Equity</li>
             <li> Sustainability</li>
             <li>Capacity Building and Empowerment</li>
         </div>
@@ -121,5 +75,51 @@
             <li>Efficiency in resource utilization</li>
         </div>
     </div>
+    <hr>
+
+    <!-- Meet the team -->
+    <h1 class="center">Meet the Team</h1>
+
+    <hr>
+
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="img-rounded">
+                <p> <img class="img-rounded img- thumbnail icon-align-center "  alt=" " src="{{asset('images/portfolio/thumb/kifutumo.jpg')}}" style="box-shadow: 5px 5px 10px #888888;width: 160px; height: 200px"></p>
+                <h5> Dr. KIFUTUMO, Francis J</h5>
+                <p><strong>CEO</strong><br>Msc in Health Management</p>
+                <a class="btn btn-social btn-facebook" href="#"><i class=" fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="span3">
+            <div class="img-rounded">
+                <p> <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/kifutumo.jpg')}}" style="box-shadow: 5px 5px 10px #888888;width: 160px; height: 200px"></p>
+                <h5>KIFUTUMO, David J.</h5>
+                <p><strong>Director</strong><br>vvhvhgg</p>
+                <a class="btn btn-social btn-facebook" href="#"><i class=" fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="span3">
+            <div class="img-rounded">
+                <p> <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/mrs.jpg')}}" style="box-shadow: 5px 5px 10px #888888;width: 160px; height: 200px"></p>
+                <h5>YUNGE, Subira Y</h5>
+                <p><strong>Adminstration Officer</strong><br>Bsc In Bussiness Adminstration</p>
+                <a class="btn btn-social btn-facebook" href="#"><i class=" fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="span3">
+            <div class="img-rounded">
+                <p> <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/1.jpg')}}" style="box-shadow: 5px 5px 10px #888888;width: 160px; height: 200px"></p>
+                <h5>YUNGE, Amani Y</h5>
+                <p><strong>Infomation Technology Technician</strong><br>Bsc In Computer Science</p>
+                <a class="btn btn-social btn-facebook" href="#"><i class=" fa fa-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="fa fa-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="fa fa-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 @stop

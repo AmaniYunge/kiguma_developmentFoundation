@@ -111,7 +111,7 @@
             <!--End Contact Form-->
 
             <!--Important Links-->
-            <div id="tweets" class="span3">
+            <div class="span3">
                 <h4>OUR FOUNDATION</h4>
                 <div>
                     <ul class="arrow">

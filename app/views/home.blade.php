@@ -215,12 +215,17 @@
                 $i = 0;
                 $k = 0;
                 ?>
-                <div class="active item"><div class="row-fluid">
+                <div class="active item">
+                    <div class="row-fluid">
                 @foreach(Slideshow::all() as $slide)
                     <?php $i++; $k++ ?>
                         <div class="span4">
-                            <img src='{{asset("uploads/slideshow/{$slide->picture}")}}' style="box-shadow: 5px 5px 10px #888888;height: 100px">
+                            <img src='{{asset("uploads/slideshow/{$slide->picture}")}}' style="box-shadow: 5px 5px 10px #888888;height: 100%; width: 100%">
                         </div>
+<!--                        <div class="desc">-->
+<!--                            <h5>{{ $slide->name }}</h5>-->
+<!--                            <small>{{ $slide->discr }}</small>-->
+<!--                        </div>-->
                         <?php
                         if($i == 3 && $k != Slideshow::all()->count()){
                             echo "</div></div><div class='item'><div class='row-fluid'>";
