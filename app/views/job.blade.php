@@ -31,11 +31,11 @@
             </div>
             <div class="span8">
                 @if(Chances::where('type','Internship')->count() == 0)
-                <h2 style="color: orangered"> There are no current interns openings </h2>
+                <h3 style="color: orangered"> There are no current interns openings </h3>
                 @else
                 @foreach(Chances::where('type','Internship')->get() as $chance )
-                <h2 style="color: orangered">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'>
-                        <i class="fa fa-download text-info pull-right"></i></a></h2>
+                <h3 style="color: orangered">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'>
+                        <i class="fa fa-download text-info pull-right"></i></a></h3>
                 <p class="lead" style="color:steelblue">{{ $chance->discr }}</p>
 
                 @endforeach
@@ -61,10 +61,10 @@
 
             <div class="span8">
                 @if(Chances::where('type','Job')->count() == 0)
-                <h2 style="color: #008000"> There are no current job vacancies  </h2>
+                <h3 style="color: #008000"> There are no current job vacancies  </h3>
                 @else
                 @foreach(Chances::where('type','Job')->get() as $chance )
-                <h2 style="color: #008000">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'> <i class="fa fa-download text-info pull-right"></i></a></h2>
+                <h3 style="color: #008000">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'> <i class="fa fa-download text-info pull-right"></i></a></h3>
                 <p class="lead" style="color:#ee5f5b">{{ $chance->discr }}</p>
 
                 @endforeach
@@ -91,10 +91,10 @@
 
         <div class="span8">
             @if(Chances::where('type','Volunteers')->count() == 0)
-            <h2 style="color: orangered"> There are no current volunteering openings </h2>
+            <h3 style="color: orangered"> There are no current volunteering openings </h3>
             @else
             @foreach(Chances::where('type','Volunteers')->get() as $chance )
-            <h2 style="color: orangered">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'> <i class="fa fa-download text-info pull-right"></i></a></h2>
+            <h3 style="color: orangered">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'> <i class="fa fa-download text-info pull-right"></i></a></h3>
             <p class="lead" style="color:mediumpurple">{{ $chance->discr }}</p>
 
             @endforeach
@@ -122,10 +122,10 @@
 
             <div class="span8">
                 @if(Chances::where('type','Tenders')->count() == 0)
-                <h2 style="color: #808080"> There are no current tenders openings </h2>
+                <h3 style="color: #808080"> There are no current tenders openings </h3>
                 @else
                 @foreach(Chances::where('type','Tenders')->get() as $chance )
-                <h2 style="color:  #808080">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'> <i class="fa fa-download text-info pull-right"></i></a></h2>
+                <h3 style="color:  #808080">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'> <i class="fa fa-download text-info pull-right"></i></a></h3>
                 <p class="lead" style="color:#3498DB">{{ $chance->discr }}</p>
 
                 @endforeach
@@ -149,10 +149,10 @@
 
             <div class="span8">
                 @if(Chances::where('type','Consultancy')->count() == 0)
-                <h2 style="color: khaki"> There are no current openings for consultancy </h2>
+                <h3 style="color: khaki"> There are no current openings for consultancy </h3>
                 @else
                 @foreach(Chances::where('type','Consultancy')->get() as $chance )
-                <h2 style="color: khaki">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'> <i class="fa fa-download text-info pull-right"></i></a></h2>
+                <h3 style="color: khaki">{{ $chance->title }}<a href='{{ asset( "uploads/resources/{$chance->file}" )}}'> <i class="fa fa-download text-info pull-right"></i></a></h3>
                 <p class="lead" style="color:#000000">{{ $chance->discr }}</p>
 
                 @endforeach

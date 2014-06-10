@@ -5,14 +5,14 @@
  * Date: 5/28/14
  * Time: 8:31 PM
  */
-class Chances extends Eloquent {
+class Resources extends Eloquent {
 
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'chances';
+    protected $table = 'resource';
 
     protected  $guarded = array('id');
 

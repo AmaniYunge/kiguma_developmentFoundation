@@ -58,8 +58,9 @@
                 </ul>
                     <ul class="nav pull-right" style="padding-top: 50px">
                     <li><a href="{{url('/')}}">Home</a></li>
-                    <li><a href="{{url('about-us')}}">What We Are</a></li>
+                    <li><a href="{{url('about-us')}}">About Us</a></li>
                     <li><a href="{{url('services')}}">What We Do</a></li>
+                    <li><a href="{{url('resource')}}">Resources</a></li>
                     <li><a href="{{url('job')}}">Orportunities</a></li>
                     <li><a href="{{url('portfolio')}}">Portfolio</a></li>
                     <li><a href="{{url('blog')}}">Blog</a></li>
@@ -94,7 +95,11 @@
                         <i class="icon-home"></i>Kiguma Development Foundation
                     </li>
                     <li>
-                        P.O Box 80,&nbsp;&nbsp;Nkinga<br>Tabora&nbsp; &nbsp;Tanzania
+                        P.O Box 80,&nbsp;&nbsp;Nkinga-Tabora<br>Tanzania-East Africa
+                    </li>
+                    <li>
+                        <i class="icon-phone"></i>
+                        <strong>Hot line:</strong>+255 787 550 250
                     </li>
                     <li>
                         <i class="icon-envelope"></i>pskdf@hotmail.com
@@ -102,10 +107,7 @@
                     <li>
                         <i class="icon-globe"></i> www.kigumadevelopmentfoundation.org
                     </li>
-                    <li>
-                        <i class="icon-phone"></i>
-                        <strong>Hot line:</strong>+255 787 550 250
-                    </li>
+
                 </ul>
             </div>
             <!--End Contact Form-->
@@ -115,7 +117,7 @@
                 <h4>OUR FOUNDATION</h4>
                 <div>
                     <ul class="arrow">
-                        <li><a href="{{url('about-us')}}">Who We Are</a></li>
+                        <li><a href="{{url('about-us')}}">About Us</a></li>
                         <li><a href="{{url('contact')}}">Contacts</a></li>
                         <li><a href="{{url('terms')}}">Terms of Use</a></li>
                         <li><a href="{{url('policy')}}">Privacy Policy</a></li>

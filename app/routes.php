@@ -100,6 +100,13 @@ Route::get('consultancy', function()
 {
     return View::make('consultancy');
 });
+
+Route::get('resource', function()
+{
+    $resources = Resources::all();
+    return View::make('resource', compact('resources'));
+});
+
 /**
  * Administration Area
  * By kelvin mbwilo
@@ -309,6 +316,31 @@ Route::post('admin/addchance',array('as'=>'addchance1',  "uses"=>"PostController
 
 Route::post('admin/deletechance/{id}',  function ($id){
     $cat = Chances::find($id);
+    unlink(public_path().'/uploads/resources/'.$cat->file);
+    $cat->delete();
+});
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////manage resources///////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Route::get('admin/addresources',array('as'=>'addresources',  function (){
+
+    return View::make('admin.addresources');
+}));
+
+
+Route::get('admin/manageresources',array('as'=>'manageresources',  function (){
+    $resources = Resources::all();
+    return View::make('admin.manageresources',  compact("resources"));
+}));
+
+Route::post('admin/addresources',array('as'=>'addresources',  "uses"=>"PostController@addresources"));
+
+
+Route::post('admin/deletecresources/{id}',  function ($id){
+    $cat = Resources::find($id);
     unlink(public_path().'/uploads/resources/'.$cat->file);
     $cat->delete();
 });

@@ -51,12 +51,16 @@
         </div>
 
         <div class="span4">
-            <h4>Our Address</h4>
-            <i class="icon-home"></i><strong>Address:</strong> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nzega District, Tabora
+            <h3>Our Address</h3>
+            <h4>Head Quaters(Ushirika street/Nzega District)</h4>
+
+             <h5>  <i class="icon-user"></i><strong>Executive Director</strong></h5>
+
+                Nzega District, Tabora
 
 
             <p>
-                &nbsp;&nbsp; &nbsp; P.o.Box 80,Nkinga-Tabora.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tanzania
+                 P.o.Box 80,Nkinga-Tabora.<br>Tanzania-East Africa
             </p>
             <p>
                 <i class="icon-envelope"></i> &nbsp;pskdf@hotmail.com

@@ -93,9 +93,7 @@
                 <h4 class="lead"style="font-family: Segoe UI">
                    <p>Currently we support and facilitate community health and development
                        programmes in the remote area of Tanzania mainland as per our registration.
-                       </p><p>As a learning organization, KDF is keen on documenting its experiences as well
-                       as results and impact of its work with communities in its districts of operations
-                       and making them available to a diverse audience. .</p>
+                       </p>
 
                 </h4>
             </div>
@@ -221,11 +219,12 @@
                     <?php $i++; $k++ ?>
                         <div class="span4">
                             <img src='{{asset("uploads/slideshow/{$slide->picture}")}}' style="box-shadow: 5px 5px 10px #888888;height: 100%; width: 100%">
+                            <div class="desc" style="color: #48484c;padding-top:10px;font-family: 'Fjalla One'">
+                                <h5 >{{ $slide->title }}</h5>
+                                <small>{{ $slide->discr }}</small>
+                            </div>
                         </div>
-<!--                        <div class="desc">-->
-<!--                            <h5>{{ $slide->name }}</h5>-->
-<!--                            <small>{{ $slide->discr }}</small>-->
-<!--                        </div>-->
+
                         <?php
                         if($i == 3 && $k != Slideshow::all()->count()){
                             echo "</div></div><div class='item'><div class='row-fluid'>";

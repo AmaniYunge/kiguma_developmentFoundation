@@ -157,7 +157,8 @@ class PostController extends \BaseController {
                 'picture' => $filename,
                 'title'   => Input::get("name"),
                 'discr'   => Input::get("discr")
-            ));
+            )
+            );
             $msg = "picture added successful";
             return View::make('admin.slideshow',compact("msg"));
         }else{
@@ -233,4 +234,31 @@ function upload_errors($err_code) {
         }
         }
        
+
+
+
+public function addresources(){
+    $file = Input::file('img1'); // your file upload input field in the form should be named 'file'
+    $destinationPath = public_path().'/uploads/resources';
+    $filename = $file->getClientOriginalName();
+    //$extension =$file->getClientOriginalExtension(); //if you need extension of the file
+    $uploadSuccess = Input::file('img1')->move($destinationPath, $filename);
+    $RandNumber   		= rand(0, 9999999999);
+    if( $uploadSuccess ) {
+        Resources::create(array(
+            "title"=>Input::get("name"),
+            "discr"=>Input::get("discr"),
+            "file" =>$filename,
+            "type" =>Input::get("category")
+        ));
+        chmod($destinationPath ."/".$filename , 0777);
+        $msg = "Resource added successful";
+        return View::make('admin.addresources',compact("msg"));
+    }else{
+        $emsg = "Error During Uploading";
+        return View::make('admin.addresources',compact("emsg"));
+    }
+
+
+}
 }
