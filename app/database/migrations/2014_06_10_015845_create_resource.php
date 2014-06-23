@@ -15,9 +15,9 @@ class CreateResource extends Migration {
 		Schema::create('resource', function(Blueprint $table)
 		{
 			$table->increments('id');
-           $table->string('title');
-           $table->string('discr');
-           $table->file('filename');
+            $table->string('title');
+            $table->string('discr');
+            $table->file('filename');
 			$table->timestamps();
 		});
 	}

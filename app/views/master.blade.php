@@ -224,6 +224,7 @@
 {{HTML::script("js/main.js")}}
 <!-- Required javascript files for Slider -->
 {{HTML::script("js/jquery.ba-cond.min.js")}}
+{{HTML::script("js/jquery.form.js")}}
 {{HTML::script("js/jquery.slitslider.js")}}
 {{HTML::script("js/jquery.easing-1.3.min.js")}}
 {{HTML::script("js/jquery.scrollTo-1.4.3.1-min.js")}}
