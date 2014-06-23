@@ -250,7 +250,7 @@
                 <div class="clearfix">
                     <h2 class="pull-left">OUR PARTNERS</h2>
                     <div class="pull-right">
-                        <a class="prev" href="#myCarousel" data-slide="prev"><i class="icon-angle-left icon-large"></i></a> <a class="next" href="#myCarousel" data-slide="next"><i class="icon-angle-right icon-large"></i></a>
+                        <a class="prev" href="#myCarousel1" data-slide="prev"><i class="fa fa-angle-left icon-large"></i></a> <a class="next" href="#myCarousel1" data-slide="next"><i class="fa fa-angle-right icon-large"></i></a>
                     </div>
                 </div>
                 <p>We grateful to our development partners over the years who have continued to

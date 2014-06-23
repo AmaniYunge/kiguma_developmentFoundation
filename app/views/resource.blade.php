@@ -58,7 +58,9 @@
             @endif
 
             </div>
+            <hr>
         </div>
+
 
         <div class="span3">
             <div class="center">
@@ -76,7 +78,9 @@
                 @endforeach
                 @endif
             </div>
+            <hr>
         </div>
+
 
         <div class="span3">
             <div class="center">
@@ -94,7 +98,10 @@
                 @endforeach
                 @endif
             </div>
+            <hr>
         </div>
+
+
         <div class="span3">
             <div class="center">
                 <h4><strong>Brochures</strong></h4>
@@ -111,6 +118,7 @@
                 @endforeach
                 @endif
             </div>
+            <hr>
         </div>
     </div>
 

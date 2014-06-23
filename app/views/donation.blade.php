@@ -63,7 +63,7 @@
         </div>
         <div class="span6">
             <div>
-                <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/item8.jpg')}}" style="width: 440px; height: 300px; box-shadow: 5px 5px 10px #888888">
+                <img class="img-rounded img- thumbnail icon-align-center"  alt=" " src="{{asset('images/portfolio/thumb/item1.jpg')}}" style="width: 440px; height: 300px; box-shadow: 5px 5px 10px #888888">
             </div>
             <br>
             <div class="row-fluid">
