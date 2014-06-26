@@ -218,7 +218,7 @@
                 @foreach(Slideshow::all() as $slide)
                     <?php $i++; $k++ ?>
                         <div class="span4">
-                            <img src='{{asset("uploads/slideshow/{$slide->picture}")}}' style="box-shadow: 5px 5px 10px #888888;height: 100%; width: 100%">
+                            <img src='{{asset("uploads/slideshow/{$slide->picture}")}}' style="box-shadow: 1px 1px 5px #888888;height: 100%; width: 100%">
                             <div class="desc" style="color: #48484c;padding-top:10px;font-family: 'Fjalla One'">
                                 <h5 >{{ $slide->title }}</h5>
                                 <small>{{ $slide->discr }}</small>

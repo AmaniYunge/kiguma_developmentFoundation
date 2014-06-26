@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10e22171-d9de-4d0a-a4fb-be137e333bf4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/rooms/_3096220986.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/slideshow/_9557874901.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/donation.blade.php" afterPath="$PROJECT_DIR$/app/views/donation.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home.blade.php" afterPath="$PROJECT_DIR$/app/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/master.blade.php" afterPath="$PROJECT_DIR$/app/views/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/resource.blade.php" afterPath="$PROJECT_DIR$/app/views/resource.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kiguma_developmentFoundation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,16 +31,7 @@
       <file leaf-file-name="master.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="35" selection-start="4353" selection-end="4365" vertical-scroll-proportion="-9.407408" vertical-offset="1546" max-vertical-offset="4878">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2014_06_10_015845_create_resource.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_10_015845_create_resource.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="11" selection-start="446" selection-end="446" vertical-scroll-proportion="0.42401502" vertical-offset="134" max-vertical-offset="720">
+            <state line="100" column="35" selection-start="4353" selection-end="4365" vertical-scroll-proportion="-0.0" vertical-offset="1800" max-vertical-offset="4878">
               <folding />
             </state>
           </provider>
@@ -88,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="18" selection-start="11065" selection-end="11065" vertical-scroll-proportion="0.0" vertical-offset="3617" max-vertical-offset="5922">
+            <state line="220" column="126" selection-start="11415" selection-end="11415" vertical-scroll-proportion="0.65834934" vertical-offset="3617" max-vertical-offset="5922">
               <folding />
             </state>
           </provider>
@@ -161,16 +146,17 @@
         <option value="$PROJECT_DIR$/app/views/contact.blade.php" />
         <option value="$PROJECT_DIR$/app/views/master.blade.php" />
         <option value="$PROJECT_DIR$/app/views/resource.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/home.blade.php" />
         <option value="$PROJECT_DIR$/app/views/donation.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/home.blade.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="27" />
-    <option name="width" value="1360" />
-    <option name="height" value="741" />
+    <option name="width" value="1368" />
+    <option name="height" value="742" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -198,7 +184,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -327,6 +312,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,7 +359,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1360" height="741" extended-state="0" />
+    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -381,7 +367,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08079268" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20121951" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20454545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22651933" sideWeight="0.5004255" order="8" side_tool="true" content_ui="tabs" />
@@ -389,11 +375,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -411,9 +397,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26143292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -685,23 +671,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_10_015845_create_resource.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="18" selection-start="11065" selection-end="11065" vertical-scroll-proportion="0.0" vertical-offset="3617" max-vertical-offset="5922">
+        <state line="21" column="11" selection-start="446" selection-end="446" vertical-scroll-proportion="0.36891386" vertical-offset="163" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="35" selection-start="4353" selection-end="4365" vertical-scroll-proportion="-9.407408" vertical-offset="1546" max-vertical-offset="4878">
+        <state line="100" column="35" selection-start="4353" selection-end="4365" vertical-scroll-proportion="-0.0" vertical-offset="1800" max-vertical-offset="4878">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_06_10_015845_create_resource.php">
+    <entry file="file://$PROJECT_DIR$/app/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="11" selection-start="446" selection-end="446" vertical-scroll-proportion="0.42401502" vertical-offset="134" max-vertical-offset="720">
+        <state line="220" column="126" selection-start="11415" selection-end="11415" vertical-scroll-proportion="0.65834934" vertical-offset="3617" max-vertical-offset="5922">
           <folding />
         </state>
       </provider>
