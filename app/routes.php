@@ -344,3 +344,18 @@ Route::post('admin/deletecresources/{id}',  function ($id){
     unlink(public_path().'/uploads/resources/'.$cat->file);
     $cat->delete();
 });
+
+//sending mail to admin from a contact form
+Route::post('sendemail',  function (){
+    $name = Input::get('fname'). " ". Input::get("lname");
+    $msg = Input::get("message");
+    $email = Input::get("email");
+    Mail::send('admin_email', array('name'=>$name,'msg'=>$msg,'email'=>$email), function($message) {
+        $message->to('kelvinmbwilo@gmail.com', 'Kelvin Mbwilo')->subject('Contact Message From Kiguma Development Site!');
+    });
+    echo "<h3>Thank you for your feedback</h3>";
+
+});
+
+
+

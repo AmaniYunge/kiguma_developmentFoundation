@@ -28,15 +28,15 @@
             <h4>Contact Form</h4>
             <div class="status alert alert-success" style="display: none"></div>
 
-            <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+            <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="{{ url('sendemail') }}">
                 <div class="row-fluid">
                     <div class="span5">
                         <label>First Name</label>
-                        <input type="text" class="input-block-level" required="required" placeholder="Your First Name">
+                        <input type="text" class="input-block-level" required="required" placeholder="Your First Name" name="fname">
                         <label>Last Name</label>
-                        <input type="text" class="input-block-level" required="required" placeholder="Your Last Name">
+                        <input type="text" class="input-block-level" required="required" placeholder="Your Last Name" name="lname">
                         <label>Email Address</label>
-                        <input type="text" class="input-block-level" required="required" placeholder="Your email address">
+                        <input type="text" class="input-block-level" required="required" placeholder="Your email address" name="email">
                     </div>
                     <div class="span6">
                         <label>Message</label>
@@ -48,6 +48,7 @@
                 <p> </p>
 
             </form>
+            <div id="output"></div>
         </div>
 
         <div class="span4">
@@ -76,6 +77,26 @@
     </div>
 
 </section>
+<script>
+    $(document).ready(function (){
+        $('#main-contact-form').on('submit', function(e) {
+            e.preventDefault();
+            $("#output").html("<h3><i class='fa fa-spin fa-spinner '></i><span>Sending... please wait...</span><h3>");
+            setTimeout(function() {
+                $("#output").html("<h3>Thank you for your feedback</h3>");
+            },2000);
+            $(this).ajaxSubmit({
+                target: '#output',
+                success:  afterSuccess
+            });
 
+        });
+        function afterSuccess(){
+            setTimeout(function() {
+                $("#output").fadeOut().html("").fadeIn();
+            },2000);
+        }
+    });
+</script>
 
 @stop
