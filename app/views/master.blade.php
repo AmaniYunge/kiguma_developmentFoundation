@@ -64,7 +64,7 @@
                     <li><a href="{{url('about-us')}}">About Us</a></li>
                     <li><a href="{{url('services')}}">What We Do</a></li>
                     <li><a href="{{url('resource')}}">Resources</a></li>
-                    <li><a href="{{url('job')}}">Orportunities</a></li>
+                    <li><a href="{{url('job')}}">Opportunities</a></li>
                     <li><a href="{{url('portfolio')}}">Portfolio</a></li>
                     <li><a href="{{url('blog')}}">Blog</a></li>
                     <li><a href="{{url('contact-us')}}">Contacts</a></li>
